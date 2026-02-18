@@ -36,7 +36,7 @@ function choisirReponse(index) {
 
   if (index === q.correct) {
     score++;
-    document.getElementById('score-live').textContent = 'Score : ' + score; // ← score en temps réel
+    document.getElementById('score-live').textContent = 'Score : ' + score;
     boutons[index].style.background = 'green';
     boutons[index].style.color = 'white';
   } else {
@@ -111,7 +111,7 @@ function startTimer() {
 
     if (tempsRestant <= 0) {
       clearInterval(timerInterval);
-      // Temps écoulé : montre la bonne réponse
+
       const q = questions[questionActuelle];
       const boutons = document.querySelectorAll('#reponses button');
       boutons.forEach(function(btn) { btn.disabled = true; });
@@ -131,4 +131,5 @@ function startTimer() {
       }, 1000);
     }
   }, 1000);
+
 }

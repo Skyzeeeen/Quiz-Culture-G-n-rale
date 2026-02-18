@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Culture Générale</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ÉCRAN ACCUEIL -->
+  <div id="accueil">
+    <h1>Quiz Culture Générale</h1>
+    <p>15 questions · 20 secondes par question</p>
+    <button onclick="startQuiz()">Commencer</button>
+  </div>
+
+  <!-- ÉCRAN QUIZ -->
+<div id="quiz" style="display:none">
+  <div style="display:flex; justify-content:space-between">
+    <p id="compteur">Question 1/15</p>
+    <p id="score-live">Score : 0</p>  <!-- ← ajoute ça -->
+  </div>
+  <p id="timer">⏱️ 20</p>
+  <h2 id="question-texte">...</h2>
+  <div id="reponses"></div>
+</div>
+
+  <!-- ÉCRAN RÉSULTATS -->
+<div id="resultats" style="display:none">
+  <h1 id="resultat-emoji">🏆</h1>
+  <h2 id="resultat-titre">Quiz terminé !</h2>
+  <p id="score-final">Tu as eu 0/15</p>
+  <button onclick="rejouer()">Rejouer</button>
+</div>
+
+  <script src="script.js"></script>
+</body>
+</html>

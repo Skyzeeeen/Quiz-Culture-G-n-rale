@@ -15,7 +15,6 @@ body {
   padding: 20px;
 }
 
-/* ACCUEIL */
 #accueil {
   text-align: center;
 }
@@ -32,7 +31,6 @@ body {
   margin-bottom: 30px;
 }
 
-/* QUIZ */
 #quiz {
   width: 100%;
   max-width: 600px;
@@ -56,7 +54,6 @@ body {
   line-height: 1.4;
 }
 
-/* BOUTONS RÉPONSES */
 #reponses {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -85,7 +82,6 @@ body {
   cursor: default;
 }
 
-/* BOUTON COMMENCER / REJOUER */
 button {
   background: #0078ff;
   color: #fff;
@@ -102,7 +98,6 @@ button:hover {
   box-shadow: 0 0 20px rgba(0,120,255,0.4);
 }
 
-/* RÉSULTATS */
 #resultats {
   text-align: center;
 }
@@ -117,4 +112,5 @@ button:hover {
   font-size: 22px;
   margin-bottom: 30px;
   color: #888;
+
 }
